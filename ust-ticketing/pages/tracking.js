@@ -22,7 +22,7 @@ export default function Login() {
         (response) => {
           console.log(response);
           if (response.data.data.requestForm.length > 0) {
-            alert('Found existing reference id');
+            alert('Found existing Tracking ID');
             window.location.replace(`/ticketstatus?id=${referenceId}`);
           } else {
             alert('No existing reference id');
@@ -49,7 +49,7 @@ export default function Login() {
                 fill
               />
             </div>
-            <h2 className='text-xl font-medium my-6'>Enter tracking number:</h2>
+            <h2 className='text-xl font-medium my-6'>Enter Tracking ID:</h2>
             <div className='flex flex-col gap-6 w-full'>
               <TextField
                 placeholder=''

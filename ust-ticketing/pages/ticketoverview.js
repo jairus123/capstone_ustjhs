@@ -112,7 +112,7 @@ export default function Login() {
                   Student Number
                 </th>
                 <th className='whitespace-nowrap px-4 py-2.5 text-left font-semibold text-neutral-900'>
-                  Email
+                  Contact Number
                 </th>
                 <th className='whitespace-nowrap px-4 py-2.5 text-left font-semibold text-neutral-900'>
                   Date Created
@@ -134,7 +134,7 @@ export default function Login() {
                 </td>
 
                 <td className='whitespace-nowrap px-4 py-2.5 first-of-type:font-semibold text-neutral-900'>
-                  {data?.email}
+                  {data?.contact}
                 </td>
                 <td className='whitespace-nowrap px-4 py-2.5 first-of-type:font-semibold text-neutral-900'>
                   {dayjs(data?.dateRequested).format('MM/DD/YYYY')}
@@ -241,10 +241,7 @@ export default function Login() {
           </div>
         </div>
       </div>
-      <div className='flex mt-10 justify-end gap-6'>
-      <Button className='bg-red-600 hover:bg-red-700'>
-          Archive 
-        </Button> 
+      <div className='flex mt-10 justify-end gap-6'> 
         <Button onClick={() => {
             window.location.replace('genoverview');
           }}>BACK TO OVERVIEW</Button>
