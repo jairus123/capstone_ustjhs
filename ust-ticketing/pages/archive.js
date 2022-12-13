@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css';
 import { useState, useEffect } from 'react';
 import useLocalStorage from 'use-local-storage';
 import axios from 'axios';
-import Mainlayout from '../components/Layout/Mainlayout';
+import Mainlayout from '../components/Layout/Sublayout';
 import Box from '../components/UI/Box';
 import BarChart from '../components/UI/BarChart';
 import Button from 'components/UI/Buttons/Button.jsx';
